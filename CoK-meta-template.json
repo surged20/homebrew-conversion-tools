@@ -1,0 +1,45 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "COK",
+				"abbreviation": "COK",
+				"full": "Crypts of Kelemvor",
+				"authors": [
+					"Thomas Foss",
+					"Scott Fitzgerald Gray"
+				],
+				"convertedBy": [
+					"Surge"
+				],
+				"version": "1.0.0",
+				"url": "https://github.com/TheGiddyLimit/homebrew",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dateAdded": 1600868694,
+		"dateLastModified": 1600868694 
+	},
+	"adventure": [
+		{
+			"name": "Crypts of Kelemvor",
+			"id": "COK",
+			"source": "COK",
+			"contents": null,
+			"level": {
+				"start": 3,
+				"end": 5
+			},
+			"published": "2018-02-26",
+			"coverUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/COK/COK-cover.webp",
+			"storyline": "Dragon+"
+		}
+	],
+	"adventureData": [
+		{
+			"id": "COK",
+			"source": "COK",
+			"data": null
+		}
+	]
+}
