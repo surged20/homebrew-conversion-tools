@@ -74,7 +74,8 @@ def get_area_id(name):
 
 parser = argparse.ArgumentParser()
 parser.add_argument("markdown_file", help="Markdown file to be processed")
-parser.add_argument("-m", "--meta-template", help="5etool _meta json template file")
+parser.add_argument("-b", "--base-image-url", help="Base image url to prepend to image urls")
+parser.add_argument("-m", "--meta-template", help="5etools _meta json template file")
 args = parser.parse_args()
 
 # The next few lines collect the data from the file passed as an argument and convert it to a list of lines to be iterated through
@@ -169,9 +170,13 @@ for x, i in htext:
 
 		if not bImage and (i.startswith("!")):
 			bImage = 1
+			if args.base_image_url is None:
+				base_url = ''
+			else:
+				base_url = args.base_image_url
 			m = re.search("(?:!\[(.*?)\]\((.*?)\))", i)
 			image["title"] = m.group(1)
-			image["href"]["url"] = m.group(2)
+			image["href"]["url"] = base_url+m.group(2)
 			continue
 
 		# Formatting for a table - bTable is switched when the table starts and ends, bTable2 is used when there is an optional caption, and bTable3 is used to format the text-align

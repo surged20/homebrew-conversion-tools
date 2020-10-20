@@ -48,7 +48,7 @@ Any cleric or paladin in the party will recognize that the characters have just 
 
 By accepting Doomguide Soulhearth's quest, the characters will help resanctify the crypts beneath the shrine of Kelemvor. Their goal is to collect all the broken seals and to relight all the braziers found in the crypts.
 
-![Crypts of Kelemvor - Floor 1](../_img/COK/COK-floor1.webp)
+![Crypts of Kelemvor - Floor 1](_img/COK/COK-floor1.webp)
 
 ## Features of the Crypts
 
@@ -255,7 +255,7 @@ When the adventurers return to the central intersection ({@area 2|Area 2: Centra
 >> Beyond the door stands a small room with a lever next to another stone door, already open. Beyond that door, a set of steep stairs leads down into darkness.
 
 A character making a successful DC 12 Wisdom (Perception) check notes that the second door has been wedged with a spike to keep it open. The door from area 2.was likewise spiked, but the spike was shattered when the door magically closed. A successful DC 13 Wisdom (Perception) check discovers a hidden latch that opens the door to area 2 from inside this area.
-![Crypts of Kelemvor - Floors 2 and 3](../_img/COK/COK-floor23.webp)
+![Crypts of Kelemvor - Floors 2 and 3](_img/COK/COK-floor23.webp)
 
 ## Area 10: Warded Hall
 

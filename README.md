@@ -29,9 +29,10 @@ Creates a 5etools cover thumbnail in webp format.
 ## Badooga's markdown to 5etools converter
 
 An enhanced version of [Badooga's excellent markdown to 5etools json converter](https://github.com/badooga/Programs/tree/master/Dungeons%20and%20Dragons/5eTools) is included. The included version additionally supports
-- Markdown line image handling
+- Markdown inline image handling
+- Optionally update image urls using a base url string (useful when previewing markdown with images locally and updating for homebrew repo)
 - Setting unique area IDs automatically for header levels 1-4
-- Use as json _meta template to produce a turnkey file to upload to the Homebrew Manager.
+- Optionally use a json _meta template to produce a turnkey file to upload to the Homebrew Manager.
 
 ## Workflow Example
 
@@ -62,5 +63,14 @@ $ ./markdown-to-5etools.py --meta-template CoK-meta-template.json "Wizards of th
 ```
 yields a `Wizards of the Coast; Crypts of Kelemvor.json` that is ready to load into the Homebrew Manager.
 
-> It will be necessary to adjust image links in the case of images stored in the homebrew repo.
+**OR**
+
+In the case of using `grip` to preview markdown with images stored locally. e.g. images stored in `./_img/COK/` where the markdown references image urls as `[foo](_img/COK/foo.webp)`, it's helpful to have the urls updated to point at the homebrew repo. Generate the 5etools json with image urls updated:
+```
+$ ./markdown-to-5etools.py --base-image-url "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/" --meta-template CoK-meta-template.json "Wizards of the Coast; Crypts of Kelemvor.md"
+```
+yields a `Wizards of the Coast; Crypts of Kelemvor.json` with:
+- Image URLs updated for loading from the homebrew repo
+- Ready to load into the **Homebrew Manager**.
+
 > Creatures/items/etc need to be manually added to the meta template or final json.
