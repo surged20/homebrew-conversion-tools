@@ -26,7 +26,7 @@ A set of tools that simplifies conversion of PDF format adventures into 5etools 
 
 Creates a 5etools cover thumbnail in webp format.
 
-## Badooga's markdown_to_5etools.py
+## Badooga's markdown-to-5etools.py
 
 An enhanced version of [Badooga's excellent markdown to 5etools json converter](https://github.com/badooga/Programs/tree/master/Dungeons%20and%20Dragons/5eTools) is included. The included version additionally supports
 - Markdown image handling
@@ -43,11 +43,11 @@ yields a `DRA18_CryptsKelemvor/` subdirectory with all extracted images and `DRA
 
 > The `-c` option is optional but recommended for clean text output. It removes all the footer text which would otherwise be intermingled into the OCRed column text. Depending on the size of the footer, it will be necessary to adjust the `-p` option appropriately to get all the column text depending on pdf layout.
 
-Copy the text file to `Wizards of the Coast; Crypts of Kelemvor.md` and edit appropriately to meet the `markdown_to_5etools.py` markdown requirements and add all desired tags. I use [grip](https://github.com/joeyespo/grip) to preview the layout locally using this [patch for webp image support](https://github.com/joeyespo/grip/pull/327).
+Copy the text file to `Wizards of the Coast; Crypts of Kelemvor.md` and edit appropriately to meet the `markdown-to-5etools.py` markdown requirements and add all desired tags. I use [grip](https://github.com/joeyespo/grip) to preview the layout locally using this [patch for webp image support](https://github.com/joeyespo/grip/pull/327).
 
 Create a 5etools meta template json file following the included `CoK-meta-template.json` sample. This allows the generated 5etools json to be loaded without any manual post processing so it's possible to iterate by:
 1. Edit markdown
-1. Run `./markdown_to_5etools.py ...`
+1. Run `./markdown-to-5etools.py ...`
 1. Load in Homebrew Manager and review
 
 A cover thumbnail for the meta template can be generated as follows:
@@ -58,7 +58,7 @@ yields a `DRA18_CryptsKelemvor.webp` cover thumbnail image.
 
 Generate the 5etools json:
 ```
-$ ./markdown_to_5etools.py --meta-template CoK-meta-template.json "Wizards of the Coast; Crypts of Kelemvor.md"
+$ ./markdown-to-5etools.py --meta-template CoK-meta-template.json "Wizards of the Coast; Crypts of Kelemvor.md"
 ```
 yields a `Wizards of the Coast; Crypts of Kelemvor.json` that is ready to load into the Homebrew Manager.
 
