@@ -15,7 +15,7 @@ This script does not automatically input tags, or metadata, nor does it automati
 - For tables, you will have to adjust the col-styles manually, if you feel that they need adjusting.
 - If you're using this for homebrew, you'll have to do the metadata (_meta) yourself. There is now an option to pass a _meta template.
 - This script also handles the table of contents for you, but you might want to double check it to make sure it's to your satisfaction.
-- By default area ids are only generated for h1 headers. Use the --area-header option to set the max header level for creating area ids.
+- Area ids are generated for all headers. Duplicate section header names will have the area id be the section name + instance for the area id. e.g. "Treasure 3"
 
 See the example md file in the linked repository (in the same folder as this script) for formatting guidelines. In particular, note the following:
 
@@ -60,9 +60,20 @@ Happy converting!
 
 import json, re
 import argparse
+
+area_ids = {}
+
+def get_area_id(name):
+	area_id = name
+	if name in area_ids:
+		area_ids[name] = area_ids.get(name) + 1
+		area_id = name + ' ' + str(area_ids.get(name))
+	else:
+		area_ids[name] = 1
+	return area_id
+
 parser = argparse.ArgumentParser()
 parser.add_argument("markdown_file", help="Markdown file to be processed")
-parser.add_argument("-a", "--area-header", type=int, help="Maximum header level that will be asigned area IDs")
 parser.add_argument("-m", "--meta-template", help="5etool _meta json template file")
 args = parser.parse_args()
 
@@ -76,7 +87,7 @@ with open(args.markdown_file, "r") as f:
 h1, h2, h3, h4 = [[i.replace("#"*h,"").strip() for x, i in htext if i.startswith("#"*h + " ")] for h in range(1,5)]
 h3d = []
 
-data = [{"type": "section", "name": i, "id": i, "entries":[]} for i in h1]
+data = [{"type": "section", "name": i, "id": get_area_id(i), "entries":[]} for i in h1]
 text = text.split("\n# ")[1:]
 
 # Initializes flags for header nesting and its tracking
@@ -272,10 +283,7 @@ for x, i in htext:
 
 		if i.replace("##", "").strip() in h2:
 			h2c += 1
-			if args.area_header > 1:
-				data[h1c]["entries"].append({"type": "section", "name": ii, "id": ii, "entries":[]})
-			else:
-				data[h1c]["entries"].append({"type": "section", "name": ii, "entries":[]})
+			data[h1c]["entries"].append({"type": "section", "name": ii, "id": get_area_id(ii), "entries":[]})
 			h3c, h4c = z[1:]
 			bh3_h2 = 0
 
@@ -285,21 +293,12 @@ for x, i in htext:
 			if not h2c:
 				bh3_h2 = 1
 				h3d.append(ii)
-				if args.area_header > 2:
-					data[h1c]["entries"].append({"type": "entries", "name": ii, "entries": []})
-				else:
-					data[h1c]["entries"].append({"type": "entries", "name": ii, "id": ii, "entries": []})
+				data[h1c]["entries"].append({"type": "entries", "name": ii, "id": get_area_id(ii), "entries": []})
 			else:
-				if args.area_header > 2:
-					data[h1c]["entries"][-1]["entries"].append({"type": "entries", "name": ii, "id": ii, "entries": []})
-				else:
-					data[h1c]["entries"][-1]["entries"].append({"type": "entries", "name": ii, "entries": []})
+				data[h1c]["entries"][-1]["entries"].append({"type": "entries", "name": ii, "id": get_area_id(ii), "entries": []})
 		elif i.replace("####", "").strip() in h4:
 			if not h2c:
-				if args.area_header > 3:
-					data[h1c]["entries"][-1]["entries"].append({"type": "entries", "name": ii, "id": ii, "entries": []})
-				else:
-					data[h1c]["entries"][-1]["entries"].append({"type": "entries", "name": ii, "entries": []})
+				data[h1c]["entries"][-1]["entries"].append({"type": "entries", "name": ii, "id": get_area_id(ii), "entries": []})
 			else:
 				data[h1c]["entries"][-1]["entries"][-1]["entries"].append({"type": "entries", "name": ii, "entries": []})
 			h4c += 1

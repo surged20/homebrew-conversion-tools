@@ -58,10 +58,9 @@ yields a `DRA18_CryptsKelemvor.webp` cover thumbnail image.
 
 Generate the 5etools json:
 ```
-$ ./markdown_to_5etools.py --area-header 2 --meta-template CoK-meta-template.json "Wizards of the Coast; Crypts of Kelemvor.md"
+$ ./markdown_to_5etools.py --meta-template CoK-meta-template.json "Wizards of the Coast; Crypts of Kelemvor.md"
 ```
 yields a `Wizards of the Coast; Crypts of Kelemvor.json` that is ready to load into the Homebrew Manager.
 
-> The `--area-header 2` option is used because the CoK markdown has its areas to be referenced in header level 2. Header level 3 has a number of **Treasure** sections with duplicate names. By limiting assignment of area ids to a maximum header level of 2, we ensure that we don't break the 5etools requirement of having unique area ids within a document.
 > It will be necessary to adjust image links in the case of images stored in the homebrew repo.
-> Creatures/items/etc need to be manually added to the final json.
+> Creatures/items/etc need to be manually added to the meta template or final json.
