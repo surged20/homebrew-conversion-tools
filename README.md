@@ -26,12 +26,12 @@ A set of tools that simplifies conversion of PDF format adventures into 5etools 
 
 Creates a 5etools cover thumbnail in webp format.
 
-## Badooga's markdown-to-5etools.py
+## Badooga's markdown to 5etools converter
 
 An enhanced version of [Badooga's excellent markdown to 5etools json converter](https://github.com/badooga/Programs/tree/master/Dungeons%20and%20Dragons/5eTools) is included. The included version additionally supports
-- Markdown image handling
-- Setting 5etools area IDs (same as the header name) automatically for header levels 2-4
-- Use a 5etools json meta template to produce a turnkey file to upload to the Homebrew Manager.
+- Markdown line image handling
+- Setting unique area IDs automatically for header levels 1-4
+- Use as json _meta template to produce a turnkey file to upload to the Homebrew Manager.
 
 ## Workflow Example
 
