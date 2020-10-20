@@ -2,7 +2,7 @@
 
 *The Crypts of Kelemvor* is a one-shot Dungeons & Dragons adventure for characters of levels 3 to 5, adapted from a quest in Neverwinter online. This scenario sees the adventuring party given an important quest to collect a number of broken magical seals and to light a number of magical braziers, all of which once protected the crypts of Kelemvor. In so doing, they can help to quell a devastating uprising of undead-- organized by a powerful lich named Idris bent on destroying the city of Neverwinter.
 
-![Temple of Kelemvor](_img/COK/COK-temple.jpg)
+![Temple of Kelemvor](_img/COK/COK-temple.webp)
 
 ## Running the Adventure
 
@@ -18,7 +18,7 @@ This is a classic dungeon delve, but with a number of MMORPG twists. The charact
 
 Deep in the Silverwisp Swamp off the southern High Road lie the burial grounds known as Ebon Downs.  Here, many generations of local folk have been laid to rest, interred within barrows, crypts, and tombs.
 
-![Map of the Region](_img/COK/COK-region.jpg)
+![Map of the Region](_img/COK/COK-region.webp)
 
  The villagers of Grimhollow have watched over these grounds for many years, with each generation passing on the duties to their children. Under their watchful eyes, the Ebon Downs have seen peace.
 
@@ -44,11 +44,11 @@ Any cleric or paladin in the party will recognize that the characters have just 
 >> Soulhearth is not the most talkative person, and he gets straight to the point. "This temple of Kelemvor, our fortress, is our stronghold against the lich Idris and its army of undead. But it is not as secure as it should be.  Grave robbers have broken into the crypts beneath the temple, and have broken several of the mystical seals that ensure those who are buried there remain at rest.
 >> "I need you to enter the crypt, relight the sacred braziers that will destroy the undead, and bring back the broken seals. I can then repair them, while the holy fires from the braziers will keep any more undead from entering the crypt."
 
-![Doomguide Soulhearth](_img/COK/COK-doomguide.jpg)
+![Doomguide Soulhearth](_img/COK/COK-doomguide.webp)
 
 By accepting Doomguide Soulhearth's quest, the characters will help resanctify the crypts beneath the shrine of Kelemvor. Their goal is to collect all the broken seals and to relight all the braziers found in the crypts.
 
-![Crypts of Kelemvor - Floor 1](../_img/COK/COK-floor1.jpg)
+![Crypts of Kelemvor - Floor 1](../_img/COK/COK-floor1.webp)
 
 ## Features of the Crypts
 
@@ -103,11 +103,11 @@ The bones are the remnants of undead skeletons destroyed by the Grave Robbers wh
 
 With a successful DC 13 Wisdom (Perception) check, a character notices crouched figures lying in wait within the shadowed spaces between the sarcophagi.
 
-![Brazier](_img/COK/COK-brazier.jpg)
+![Brazier](_img/COK/COK-brazier.webp)
 
 ### Zombie Horde 
 
-![Zombie Horde](_img/COK/COK-horde.jpg)
+![Zombie Horde](_img/COK/COK-horde.webp)
  
 As soon as any character moves past the pillars closest to the doorway, eight {@creature zombie|mm|zombies} rise up from the shadows and attack. For a 4th-level party, use eleven zombies. For a 5th-level party, use fifteen zombies.
 
@@ -177,9 +177,9 @@ Any search of the webs in the spiders' nest uncovers a purse holding 15 gp, as w
 
 ## Area 7: Side Crypt
 
-![Tattered Banner](_img/COK/COK-banner.jpg)
+![Tattered Banner](_img/COK/COK-banner.webp)
 
->> A statue of Kelemvor with a broken seal at its feet stands along the east wall, while a brazier stands along the west wall. A tattered banner bearing the symbol of Kelemvor hangs on the wall above the brazier.  
+>> A statue of Kelemvor with a broken seal at its feet stands along the east wall, while a brazier stands along the west wall. A tattered banner bearing the symbol of Kelemvor hangs on the wall above the brazier.
 >> Four ornate stone sarcophagi stand in the corners of the room, and in an alcove near the entrance. The sarcophagus in the far corner appears to have been broken in half.
 
 A successful DC 15 Wisdom (Perception) check reveals movement within the broken sarcophagus.
@@ -216,7 +216,7 @@ As the characters move farther into the room (whether during the skeleton fight 
 >> Wide alcoves before the dais are each set with a stone sarcophagus and lit by a magical torch. The western alcove is occupied by zombies, hunched over something on the floor between them and seemingly oblivious to your presence.
 >> Standing between a pair of pillars, another statue holds a cracked seal in its hands. A ten-foot-deep dais to the north rises six feet above the floor, lit by a magical torch and reached by a short flight of steps. A brazier stands at the center of the dais, with a bas relief of a set of Kelemvor scales carved above it. Oddly, the scales are tipped to the left, where Kelemvor's symbol normally shows them in balance. A large brass key is set into the wall beneath the symbol.
 
-![Statue](_img/COK/COK-statue.jpg)
+![Statue](_img/COK/COK-statue.webp)
 
 ### Zombie Diners
 
@@ -228,7 +228,7 @@ At the top of the stairs, a hidden pressure plate triggers a mechanical trap. An
 
 A character searching the stairs and the dais notes the trap with a successful DC 13 Wisdom (Perception) check, and can easily step around it. A character climbing the stairs without searching spots the trap only if his or her passive Perception is 18 or higher. A character climbing the stairs at speed has no chance to spot the trap.
 
-![Dias](_img/COK/COK-dias.jpg)
+![Dias](_img/COK/COK-dias.webp)
 
 ### Unfortunate Visitor
 
@@ -255,7 +255,7 @@ When the adventurers return to the central intersection ({@area 2|Area 2: Centra
 >> Beyond the door stands a small room with a lever next to another stone door, already open. Beyond that door, a set of steep stairs leads down into darkness.
 
 A character making a successful DC 12 Wisdom (Perception) check notes that the second door has been wedged with a spike to keep it open. The door from area 2.was likewise spiked, but the spike was shattered when the door magically closed. A successful DC 13 Wisdom (Perception) check discovers a hidden latch that opens the door to area 2 from inside this area.
-![Crypts of Kelemvor - Floors 2 and 3](../_img/COK/COK-floor23.jpg)
+![Crypts of Kelemvor - Floors 2 and 3](../_img/COK/COK-floor23.webp)
 
 ## Area 10: Warded Hall
 
@@ -302,7 +302,7 @@ When the characters have moved through the open door to see fully into the room,
 
 It takes a successful DC 12 Wisdom (Perception) check to hear the details of the argument between the adventurers known as the Grave Robbers. If none of the characters can hear the conversation, paraphrase the following action.
 
-![Grave Robbers](_img/COK/COK-robbers.jpg)
+![Grave Robbers](_img/COK/COK-robbers.webp)
 
 >>  The figure with the sword seems impatient as he grunts, "You going to be there all day? Or should | smash it open now?"
 >>  A figure closer to the door snarls back, "I'm a mage, not a rogue. There are heavy wards and strong magic keeping this door sealed."
@@ -351,7 +351,7 @@ The book on the plinth is a dusty prayer book left here by the Kelemvorites, and
 
 ### Vengeful Undead
 
-![Sarcophagus](_img/COK/COK-sarcophagus.jpg)
+![Sarcophagus](_img/COK/COK-sarcophagus.webp)
 
 A long-dead mage in the sarcophagus has been raised as a {@creature flameskull} and woken from its undead slumber by the opening of the door into this area. Seeking freedom, it starts to hammer against the lid of its coffin.  If the characters lift the sarcophagus lid, the flameskull attacks at once. If they do not, it casts {@spell lightning bolt} (which it has prepared instead of {@spell fireball}) to blast the sarcophagus open before it attacks. Any characters within 10 feet of the sarcophagus must succeed on a DC 12 Dexterity saving throw or be struck by shattered stone for 10 ({@dice 3d6}) damage. Other characters might "accidentally" be caught in the line of the blind-fired *lightning bolt*, as you see fit.
 
