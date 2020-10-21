@@ -90,7 +90,7 @@ Two doors and an open corridor give the characters a choice of directions from t
 
 Where the passageway opens up to the east, it reveals both a larger room ahead and a statue of the god Kelemvor, its hands open as if it were holding something. A piece of carved marble sits on the floor at the statue's feet. Opposite the statue is a small alcove set with a pile of humanoid bones.
 
-Pulling the lever raises the creaking portcullis, but there is no sign of a mechanism for the stone door. No action or magic available to the characters can open the door, and any ability checks made to search or open it result in failure. (This door opens automatically after the characters turn a special key in {@area 8|Area 8: Chapel}.)
+Pulling the lever raises the creaking portcullis, but there is no sign of a mechanism for the stone door. No action or magic available to the characters can open the door, and any ability checks made to search or open it result in failure. (This door opens automatically after the characters turn a special key in {@area 8|Area 8}.)
 
 The bones are the remnants of undead skeletons destroyed by the Grave Robbers when they recently passed this way.
 
@@ -150,7 +150,7 @@ The magical wards are a boon to the characters, but their pulsing light can be d
 
 Any character standing in the entrance to this area when the door falls must decide which side of the door to move to. The character must also succeed on a DC 12 Dexterity saving throw or take 5 ({@dice 1d10}) bludgeoning damage and be knocked prone.
 
-Any characters left in {@area 3|Area 3: Main Crypt} when the door falls can pull the lever to open it and join the fight. If all the characters are in {@area 5|Area 5: Wight Tomb}, the door can be opened manually (see "Features of the Crypts," above).
+Any characters left in {@area 3|Area 3} when the door falls can pull the lever to open it and join the fight. If all the characters are in {@area 5|Area 5}, the door can be opened manually (see "Features of the Crypts," above).
 
 After the fight, a successful DC 13 Intelligence (Investigation) check can be made to examine the door mechanism and locate a hidden latch that opens the door from inside. This check cannot be made in combat.
 
@@ -162,7 +162,7 @@ The sarcophagus is set with four large sardonyx gemstones worth 10 gp each, all 
 
 >> An intersection of corridors features two stone doors with a lever between them, a sarcophagus in an alcove, and a statue of Kelemvor with a broken seal in its hands.
 
-Nothing hinders the characters from easily claiming this seal--unless they open the doors first. Pulling the lever opens both doors simultaneously, revealing the entrance to {@area 7|Area 7: Side Crypt} as well as this area--a web-filled chamber whose occupants are not happy to be disturbed.
+Nothing hinders the characters from easily claiming this seal--unless they open the doors first. Pulling the lever opens both doors simultaneously, revealing the entrance to {@area 7|Area 7} as well as this area--a web-filled chamber whose occupants are not happy to be disturbed.
 
 ### Spider Hunt
 
@@ -238,7 +238,7 @@ Any character searching the north end of the room notes a pile of broken tile an
 
 ### Turning the Key
 
-The large brass key is magically fitted to the keyhole underneath the bas relief of Kelemvor's symbol, and cannot be removed. When any character turns the key, the scales in the bas relief magically right themselves, and the characters hear the faint sound of a stone door grinding open in the distance, back toward the entrance.  (This is the means by which the characters gain entrance to {@area 9|Area 9: Dark Stairs} and the levels below.)
+The large brass key is magically fitted to the keyhole underneath the bas relief of Kelemvor's symbol, and cannot be removed. When any character turns the key, the scales in the bas relief magically right themselves, and the characters hear the faint sound of a stone door grinding open in the distance, back toward the entrance.  (This is the means by which the characters gain entrance to {@area 9|Area 9} and the levels below.)
 
 Turning the key back in the other direction puts the scales out of balance once more and closes the door into area 9. Otherwise, after one hour, the key magically turns back, the scales go out of balance once more, and the door to area 9 automatically closes.
 
@@ -250,7 +250,7 @@ The dead cleric wears a breastplate in good condition, but it's in bad need of c
 
 ## Area 9: Dark Stairs
 
-When the adventurers return to the central intersection ({@area 2|Area 2: Central Intersection}) after turning the key on the dais in {@area 8|Area 8: Chapel}, they will see that the stone door to the north has opened as a result.
+When the adventurers return to the central intersection ({@area 2|Area 2}) after turning the key on the dais in {@area 8|Area 8}, they will see that the stone door to the north has opened as a result.
 
 >> Beyond the door stands a small room with a lever next to another stone door, already open. Beyond that door, a set of steep stairs leads down into darkness.
 
@@ -288,7 +288,7 @@ See the next area for more information.
 
 ## Area 12: Warded Chamber
 
-From the entry room of {@area 11|Area 11: Faintly Lit Stairs}, the characters will be able to see some of the details of this room through the open door, as you determine.
+From the entry room of {@area 11|Area 11}, the characters will be able to see some of the details of this room through the open door, as you determine.
 
 >> The floor of this rectangular chamber is breached directly in front of the door by a collapsed trap--a spiked pit fifteen feet across and nearly twenty-five feet side to side. Narrow ledges to both sides look as though they should allow passage around the pit. Near the center of the twenty-foot-high chamber, a brazier of balance stands unlit. A sealed sarcophagus is set off to the side.
 
@@ -357,11 +357,11 @@ A long-dead mage in the sarcophagus has been raised as a {@creature flameskull} 
 
 If the Grave Robbers have accompanied the characters into this area, have them join the fight by giving their statistics blocks to three of the players. In that event, the flameskull has 80 hit points and can use its Fire Ray four times with its Multiattack trait. Roll randomly for each attack to determine whether the flameskull targets the player characters or the NPCs.
 
-If the characters can lure the flameskull into the light of the burning brazier in {@area 12|Area 12: Warded Chamber}, it will take damage only once from the brazier's light before retreating and attacking at range.
+If the characters can lure the flameskull into the light of the burning brazier in {@area 12|Area 12}, it will take damage only once from the brazier's light before retreating and attacking at range.
 
 ### Back Door
 
-The characters (and any surviving Grave Robbers) can use the door in {@area 13|Area 13: Final Crypt} to leave the crypt if they have no reason to retrace their route back through the dungeon.  However, the door has no lever, meaning it must be opened manually or with magic.
+The characters (and any surviving Grave Robbers) can use the door in {@area 13|Area 13} to leave the crypt if they have no reason to retrace their route back through the dungeon.  However, the door has no lever, meaning it must be opened manually or with magic.
 
 The stairs climb sixty feet before emerging through a concealed door in a mausoleum near the temple of Kelemvor. (Soulhearth and his fellow acolytes were unaware of this long-forgotten second entrance into the crypts, and are grateful to the characters for bringing it to their attention so they can close it off.)
 

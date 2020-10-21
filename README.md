@@ -36,6 +36,8 @@ An enhanced version of [Badooga's excellent markdown to 5etools json converter](
 
 ## Workflow Example
 
+### Convert PDF to ASCII7 text
+
 Using the [Crypts of Kelemvor](https://media.wizards.com/2018/dnd/dragon/18/DRA18_CryptsKelemvor.pdf) adventure:
 ```
 ./pdf-two-column-to-text.sh -c DRA18_CryptsKelemvor.pdf
@@ -46,16 +48,26 @@ yields a `DRA18_CryptsKelemvor/` subdirectory with all extracted images and `DRA
 
 Copy the text file to `Wizards of the Coast; Crypts of Kelemvor.md` and edit appropriately to meet the `markdown-to-5etools.py` markdown requirements and add all desired tags. I use [grip](https://github.com/joeyespo/grip) to preview the layout locally using this [patch for webp image support](https://github.com/joeyespo/grip/pull/327).
 
-Create a 5etools meta template json file following the included `CoK-meta-template.json` sample. This allows the generated 5etools json to be loaded without any manual post processing so it's possible to iterate by:
-1. Edit markdown
+### Process markdown to 5etools json
+
+Process overview:
+1. Edit text to add markdown syntax
+1. Optionally preview in `grip`
 1. Run `./markdown-to-5etools.py ...`
 1. Load in Homebrew Manager and review
 
+#### Optionally create a 5etools _meta template
+
+Create a 5etools _meta template json file following the included `CoK-meta-template.json` sample. This allows the generated 5etools json to be loaded without any manual post processing.
+
+#### Cover thumbnail generation
 A cover thumbnail for the meta template can be generated as follows:
 ```
 $ ./pdf-to-5etools-thumbnail.sh DRA18_CryptsKelemvor.pdf
 ```
 yields a `DRA18_CryptsKelemvor.webp` cover thumbnail image.
+
+#### Simple markdown to 5etools json
 
 Generate the 5etools json:
 ```
@@ -63,7 +75,7 @@ $ ./markdown-to-5etools.py --meta-template CoK-meta-template.json "Wizards of th
 ```
 yields a `Wizards of the Coast; Crypts of Kelemvor.json` that is ready to load into the Homebrew Manager.
 
-**OR**
+#### markdown to 5etools json with image url translation
 
 In the case of using `grip` to preview markdown with images stored locally. e.g. images stored in `./_img/COK/` where the markdown references image urls as `[foo](_img/COK/foo.webp)`, it's helpful to have the urls updated to point at the homebrew repo. Generate the 5etools json with image urls updated:
 ```
@@ -73,4 +85,21 @@ yields a `Wizards of the Coast; Crypts of Kelemvor.json` with:
 - Image URLs updated for loading from the homebrew repo
 - Ready to load into the **Homebrew Manager**.
 
-> Creatures/items/etc need to be manually added to the meta template or final json.
+#### markdown to 5etools json with area id truncation
+
+If converting an adventure with keyed areas, the section headers may be extremely long (e.g. **Area 37B: This Is An Extremely Long Title For A Room In A Dungeon**). In the preceding example, it's convenient to truncate the unique area id to just `Area 37B` so that tagging areas are not unwieldy or require remembering the complete text of the section header. To address this a --area-pattern option is available which accepts a regex. This regex should match the adventure's pattern for keyed area section names. A common pattern in use is **Area N** where **N**  is one or more digits followed by an upper or lower case letter. A working regex for this common pattern is `^Area [0-9]+[a-zA-Z]?`. Generate the 5etools json with truncated area ids:
+```
+./markdown-to-5etools.py --area-pattern "Area [0-9]+[a-zA-Z]?" --base-image-url "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/" --meta-template CoK-meta-template.json "Wizards of the Coast; Crypts of Kelemvor.md"
+```
+yields a `Wizards of the Coast; Crypts of Kelemvor.json` with:
+- Image URLs updated for loading from the homebrew repo
+- Area IDs truncated to just the area number (e.g. `Area 37B`) to work with a more minimal area tag (e.g. `{@area 37B|Area 37B}`)
+- Ready to load into the **Homebrew Manager**.
+
+### Cleanup
+
+Creatures/items/etc need to be manually added to the meta template or final json.
+
+## TODO
+
+* Support setting command line options via a config file

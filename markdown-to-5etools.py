@@ -64,16 +64,22 @@ import argparse
 area_ids = {}
 
 def get_area_id(name):
-	area_id = name
-	if name in area_ids:
-		area_ids[name] = area_ids.get(name) + 1
-		area_id = name + ' ' + str(area_ids.get(name))
+	if args.area_pattern is None:
+		area_name = name
 	else:
-		area_ids[name] = 1
+		area = re.match(args.area_pattern, name)
+		area_name = area.group(0) if area is not None else name
+	if area_name in area_ids:
+		area_ids[area_name] = area_ids.get(area_name) + 1
+		area_id = area_name + ' ' + str(area_ids.get(area_name))
+	else:
+		area_ids[area_name] = 1
+		area_id = area_name
 	return area_id
 
 parser = argparse.ArgumentParser()
 parser.add_argument("markdown_file", help="Markdown file to be processed")
+parser.add_argument("-a", "--area-pattern", help="Regex pattern to match/shorten area ids")
 parser.add_argument("-b", "--base-image-url", help="Base image url to prepend to image urls")
 parser.add_argument("-m", "--meta-template", help="5etools _meta json template file")
 args = parser.parse_args()
