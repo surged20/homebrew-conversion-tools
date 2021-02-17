@@ -213,7 +213,7 @@ for x, i in htext:
 			continue
 
 		elif i.startswith("|"):
-			table["rows"].append([t.strip() for t in i.split("|") if t.strip() != ""])
+			table["rows"].append([re.sub("\\\\", "", t.strip()) for t in re.split(r'(?<!\\)\|', i) if t.strip() != ""])
 			continue
 
 		# insetReadAloud - must come before inset
